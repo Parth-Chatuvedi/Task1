@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.top {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url('reed-geiger-2e9FjnboAbI-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.top .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.295);
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: white;
+    bottom: 5%;
+}
+
+.text h1 {
+    font-weight: 600;
+    font-size: 4vw;
+}
+
+.text .image {
+    background-image: url('pietro-de-grandi-Q5dMq3cKqec-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 220px;
+}
+
+.rtext {
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rtext p {
+    font-size: 12px;
+}
+
+.bottom {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    min-height: 40vh;
+}
+
+.b1, .b2, .b3 {
+    width: 30%;
+    min-height: 30vh;
+}
+
+.b1 {
+    background-image: url('micael-rodrigues-G3XXUyKYmHo-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.b1 h1, .b1 p {
+    color: white;
+    padding: 30px 15px;
+}
+
+.b2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.b2 .up {
+    flex: 1;
+    background-image: url('florian-delee-ehVkU2A6zys-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.b2 .up h1, .b2 .down h1 {
+    color: white;
+    font-size: 3vw;
+    margin-bottom: 20px;
+}
+
+.b2 .up p, .b2 .down p {
+    color: white;
+    font-size: 1.5vw;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.b2 .down {
+    flex: 1;
+    background-image: url('ak.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.b2 .down .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.344);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.b3 {
+    width: 40%;
+    background-image: url('micael-rodrigues-GVtBxDSjNOQ-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.b3 .overlay {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 4vw 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: white;
+}
+
+.b3 .overlay p {
+    padding: 1.2vh;
+}
+
+.join-us {
+    width: 100%;
+    min-height: 40vh;
+    background-image: url('ak.jpg'); /* Replace with the correct path to your background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.join-us .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.join-us h1 {
+    font-size: 3vw;
+    margin-bottom: 20px;
+}
+
+.join-us p {
+    font-size: 1.5vw;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons i {
+    margin: 0 10px;
+    font-size: 2rem;
+}
+
+@media (max-width: 700px) {
+    .text h1 {
+        font-size: 5vh;
+    }
+
+    .text .image {
+        height: 200px;
+        width: 140px;
+        margin-top: 20px;
+    }
+
+    .rtext {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .rtext p {
+        margin-top: 10px;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+
+    .bottom {
+        flex-direction: column;
+    }
+
+    .b1, .b2, .b3 {
+        width: 100%;
+        min-height: 30vh;
+    }
+
+    .b2 .up, .b2 .down {
+        min-height: 30vh;
+    }
+
+    .b2 .up h1 {
+        font-size: 4vw;
+    }
+
+    .b2 .up p {
+        font-size: 2vw;
+    }
+
+    .b2 .down h1 {
+        font-size: 4vw;
+    }
+
+    .b2 .down p {
+        font-size: 2vw;
+    }
+
+    .b3 {
+        background-position: left;
+    }
+
+    .b3 .overlay {
+        width: 100%;
+        margin-left: 0;
+        padding: 8vw 6vh;
+    }
+
+    .join-us h1 {
+        font-size: 5vw;
+    }
+
+    .join-us p {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .text {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .text h1 {
+        font-size: 5vh;
+    }
+
+    .text .image {
+        height: 200px;
+        width: 140px;
+        margin-top: 20px;
+    }
+
+    .rtext {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .rtext p {
+        margin-top: 10px;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+
+    .bottom {
+        flex-direction: column;
+    }
+
+    .b1, .b2, .b3 {
+        width: 100%;
+        min-height: 30vh;
+    }
+
+    .b2 .up, .b2 .down {
+        min-height: 30vh;
+    }
+
+    .b2 .up h1 {
+        font-size: 6vw;
+    }
+
+    .b2 .up p {
+        font-size: 3vw;
+    }
+
+    .b2 .down h1 {
+        font-size: 6vw;
+    }
+
+    .b2 .down p {
+        font-size: 3vw;
+    }
+
+    .b3 {
+        background-position: left;
+    }
+
+    .b3 .overlay {
+        width: 100%;
+        margin-left: 0;
+        padding: 10vw 8vh;
+    }
+
+    .join-us h1 {
+        font-size: 6vw;
+    }
+
+    .join-us p {
+        font-size: 3vw;
+    }
+}
